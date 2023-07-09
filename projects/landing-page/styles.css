@@ -8,19 +8,32 @@
 
 h1 {
     font-size: 48px;
-    font-weight: extra-bold;
-    color: #F9FAF8;    
+    font-weight: extra-bold;   
 }
 
 .hero-text {
     font-size: 18px;
+    
+}
+
+.hero-text, .image-placeholder {
     color: #E5E7EB;
+}
+
+h1, h3, .call-to-action-text, .hero-logo, button {
+    color: #F9FAF8; 
+}
+
+h2, .quote-text {
+    color: #1F2937;
 }
 
 .hero-logo {
     font-size: 24px;
-    color: #F9FAF8;
     font-weight: bold;
+}
+.image-placeholder {
+    background-color: grey;
 }
 
 .light-blue{
@@ -30,7 +43,26 @@ h1 {
 h2 {
     font-size: 36px;
     font-weight: extra-bold;
-    color: #1F2937;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #3882F6;
+    border-style: solid;
+}
+
+.btn-dark {
+    border-color: #1F2937;
+}
+
+.btn-white {
+    border-color: #F9FAF8;
+}
+
+.card {
+    border-color: #3882F6;
+    border-radius: 5px;
+    border-style: solid;
 }
 
 .quote-background {
@@ -41,5 +73,4 @@ h2 {
     font-size: 36px;
     font-weight: light;
     font-style: italic;
-    color: #1F2937;
 }

@@ -17,12 +17,16 @@
                 <a class="hero-text" href="">header link three</a>    
             </nav>
         </header>
-        <h1>This website is awesome</h1>
-        <p class="hero-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-        <button class="light-blue">Sign up</button>
-        <figure>
-            <img src=""/>
-        </figure>
+        <div>
+            <h1>This website is awesome</h1>
+            <p class="hero-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+            <button class="light-blue, btn-dark">Sign up</button>
+        </div>
+
+        <div class="image-placeholder">
+            <p></p>
+        </div>
+
     </section>
 
     <!--card section-->
@@ -30,14 +34,18 @@
         <h2>Some random information.</h2>
         <!--card container-->
         <div>
-            <figure></figure>
-            <figcaption>This is some subtext under an illustration or an image</figcaption>
-            <figure></figure>
-            <figcaption>This is some subtext under an illustration or an image</figcaption>
-            <figure></figure>
-            <figcaption>This is some subtext under an illustration or an image</figcaption>
-            <figure></figure>
-            <figcaption>This is some subtext under an illustration or an image</figcaption>
+            <figure class="card">
+                <figcaption>This is some subtext under an illustration or an image</figcaption>
+            </figure>
+            <figure class="card">
+                <figcaption>This is some subtext under an illustration or an image</figcaption>
+            </figure>
+            <figure class="card">
+                <figcaption>This is some subtext under an illustration or an image</figcaption>
+            </figure>
+            <figure class="card">
+                <figcaption>This is some subtext under an illustration or an image</figcaption>
+            </figure>
         </div>
     </article>
 
@@ -51,16 +59,16 @@
 
     <!--call to action section-->
     <article>
-        <div>
+        <div class="light-blue">
            <h3>Call to action! It's time!</h3>
-           <p>Sign up for our product by clicking that button right over there!</p>
-           <button class="light-blue">Sign up</button> 
+           <p class="call-to-action-text">Sign up for our product by clicking that button right over there!</p>
+           <button class="light-blue, btn-white">Sign up</button> 
         </div>
     </article>
 
     <!--footer section-->
-    <footer>
-        <p>Copyright © The Odin Project 2021</p>
+    <footer class="dark-grey">
+        <p class="hero-text">Copyright © The Odin Project 2021</p>
     </footer>
 </body>
 </html>
