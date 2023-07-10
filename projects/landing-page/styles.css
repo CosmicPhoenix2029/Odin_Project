@@ -8,6 +8,19 @@ body {
     padding: 0;
 }
 
+/*All horizontal flex containers*/
+header, .image-placeholder, .card-container, .call-to-action, footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*All vertical flex containers*/
+.main, .quote-background, article, .figure-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .dark-grey {
     background-color: #1F2937;
 }
@@ -62,8 +75,6 @@ button {
 .quote-background {
     background-color: #E5E7EB;
     padding-top: 90px;
-    display: flex;
-    flex-direction: column;
 }
 
 .quote-reference {
@@ -81,19 +92,12 @@ button {
     margin-bottom: 0;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    
-}
 section, article {
     padding: 0 175px;
 }
+
 header {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     height: 80px;
 }
 
@@ -119,9 +123,6 @@ header {
 
 .image-placeholder{
     background-color: slategray;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     font-size: 22px;
 }
@@ -131,8 +132,6 @@ header {
 
 article {
     padding-bottom: 90px;
-    display: flex;
-    flex-direction: column;
 }
 
 h2 {
@@ -142,8 +141,6 @@ h2 {
 }
 
 .card-container{
-    display: flex;
-    flex-direction: row;
     flex: auto;
     justify-content: space-around;
 }
@@ -158,8 +155,6 @@ h2 {
 }
 
 .figure-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 150px;
 }
@@ -172,10 +167,7 @@ h2 {
     margin-top: 90px;
     padding: 25px 0px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     line-height: 0;
 }
 
@@ -187,8 +179,5 @@ h3 {
 
 footer {
     height: 90px;   
-    display: flex; 
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
