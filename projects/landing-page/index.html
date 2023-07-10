@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Landing Page</title>
 </head>
+
 <body>
     <!--Top section-->
-    <section class="dark-grey">
-        <header>
-            <p class="hero-logo">Header Logo</p>
-            <nav>
-                <a class="hero-text" href="">header link one</a>
-                <a class="hero-text" href="">header link two</a>
-                <a class="hero-text" href="">header link three</a>    
-            </nav>
-        </header>
-        <div>
-            <h1>This website is awesome</h1>
-            <p class="hero-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-            <button class="light-blue, btn-dark">Sign up</button>
-        </div>
+    <div class="main">
+        <section class="dark-grey">
+            <header class="flex-container">
+                <p class="hero-logo">Header Logo</p>
+                <nav>
+                    <a class="hero-text" href="">header link one</a>
+                    <a class="hero-text" href="">header link two</a>
+                    <a class="hero-text" href="">header link three</a>
+                </nav>
+            </header>
+            <div class="introduction">
+                <div class="left">
+                    <h1>This website is awesome</h1>
+                    <p class="hero-text">This website has some subtext that goes here under the main title. It's a
+                        smaller
+                        font and the color is lower contrast</p>
+                    <button class="light-blue btn-dark" type="button">Sign up</button>
+                </div>
+                <div class="image-placeholder">
+                    <p>this is a placeholder for an image</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="image-placeholder">
-            <p></p>
-        </div>
+        <!--card section-->
+        <article>
+            <h2>Some random information.</h2>
+            <!--card container-->
+            <div class="card-container">
+                <div class="figure-container">
+                    <figure class="card"></figure>
+                    <figcaption>This is some subtext under an illustration or an image</figcaption>
+                </div>
+                <div class="figure-container">
+                    <figure class="card"></figure>
+                    <figcaption>This is some subtext under an illustration or an image</figcaption>
+                </div>
+                <div class="figure-container">
+                    <figure class="card"></figure>
+                    <figcaption>This is some subtext under an illustration or an image</figcaption>
+                </div>
+                <div class="figure-container">
+                    <figure class="card"></figure>
+                    <figcaption>This is some subtext under an illustration or an image</figcaption>
+                </div>
+            </div>
+        </article>
 
-    </section>
+        <!--quote section-->
+        <article class="quote-background">
+            <p class="quote-text">
+                This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
+                people will actually read it. Who knows? All I know is that it looks nice.
+            </p>
+            <p class="quote-reference">-Thor, God of Thunder</p>
+        </article>
 
-    <!--card section-->
-    <article>
-        <h2>Some random information.</h2>
-        <!--card container-->
-        <div>
-            <figure class="card">
-                <figcaption>This is some subtext under an illustration or an image</figcaption>
-            </figure>
-            <figure class="card">
-                <figcaption>This is some subtext under an illustration or an image</figcaption>
-            </figure>
-            <figure class="card">
-                <figcaption>This is some subtext under an illustration or an image</figcaption>
-            </figure>
-            <figure class="card">
-                <figcaption>This is some subtext under an illustration or an image</figcaption>
-            </figure>
-        </div>
-    </article>
+        <!--call to action section-->
+        <article>
+            <div class="light-blue call-to-action">
+                <div>
+                    <h3>Call to action! It's time!</h3>
+                    <p class="call-to-action-text">Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <button class="light-blue btn-white" type="button">Sign up</button>
+            </div>
+        </article>
 
-    <!--quote section-->
-    <article class="quote-background">
-        <p class="quote-text">
-            This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
-        </p>
-        <p>-Thor, God of Thunder</p>
-    </article>
-
-    <!--call to action section-->
-    <article>
-        <div class="light-blue">
-           <h3>Call to action! It's time!</h3>
-           <p class="call-to-action-text">Sign up for our product by clicking that button right over there!</p>
-           <button class="light-blue, btn-white">Sign up</button> 
-        </div>
-    </article>
-
-    <!--footer section-->
-    <footer class="dark-grey">
-        <p class="hero-text">Copyright © The Odin Project 2021</p>
-    </footer>
+        <!--footer section-->
+        <footer class="dark-grey">
+            <p class="hero-text">Copyright © Haydn Atkinson 2023</p>
+        </footer>
+    </div>
 </body>
+
 </html>

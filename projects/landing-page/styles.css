@@ -2,29 +2,35 @@
     font-family: calibri;
 }
 
+/*remove white borders around the page*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .dark-grey {
     background-color: #1F2937;
 }
 
 h1 {
     font-size: 48px;
-    font-weight: extra-bold;   
+    font-weight: extra-bold;
+    justify-content: flex-start;   
 }
 
 .hero-text {
     font-size: 18px;
-    
 }
 
-.hero-text, .image-placeholder {
+.hero-text, nav a {
     color: #E5E7EB;
 }
 
-h1, h3, .call-to-action-text, .hero-logo, button {
+h1, .call-to-action-text, .hero-logo, button, .image-placeholder p {
     color: #F9FAF8; 
 }
 
-h2, .quote-text {
+h2, .quote-text, figcaption {
     color: #1F2937;
 }
 
@@ -32,23 +38,17 @@ h2, .quote-text {
     font-size: 24px;
     font-weight: bold;
 }
-.image-placeholder {
-    background-color: grey;
-}
 
-.light-blue{
+.light-blue {
     background-color: #3882F6;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: extra-bold;
 }
 
 button {
     border-radius: 5px;
-    background-color: #3882F6;
     border-style: solid;
+    font-size: 20px;
+    font-weight: bold;
+    width: 125px;
 }
 
 .btn-dark {
@@ -59,18 +59,132 @@ button {
     border-color: #F9FAF8;
 }
 
-.card {
-    border-color: #3882F6;
-    border-radius: 5px;
-    border-style: solid;
-}
-
 .quote-background {
     background-color: #E5E7EB;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-reference {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 0;
 }
 
 .quote-text {
     font-size: 36px;
-    font-weight: light;
+    font-weight: lighter;
     font-style: italic;
+    padding: 0 100px;
+    margin-bottom: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+}
+section, article {
+    padding: 0 175px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    padding: 90px 0px;
+}
+
+.introduction div {
+    flex: 1; 
+    padding-right: 0 90px;  
+}
+
+.introduction div h1, .introduction div p, .introduction div button{
+    padding: 5px 0;
+    margin: 0;
+        
+}
+.introduction div h1, .introduction div p {
+    width: 425px;
+}
+
+.image-placeholder{
+    background-color: slategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+article {
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    align-self: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: space-around;
+}
+
+.card {
+    border-color: #3882F6;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    height: 150px;
+    width: 150px;
+}
+
+.figure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.figure-container figcaption {
+   font-size: 18px; 
+}
+
+.call-to-action {
+    margin-top: 90px;
+    padding: 25px 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 0;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+footer {
+    height: 90px;   
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
