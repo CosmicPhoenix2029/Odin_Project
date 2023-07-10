@@ -33,6 +33,7 @@ h1 {
 
 .hero-text {
     font-size: 18px;
+    text-decoration: none;
 }
 
 .hero-text, nav a {
