@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    <script>
+        /*iterate through a range of numbers between 1-100
+         - if the number is divizible by 3, then print "fizz"
+         - if the number is divizible by 5, then print "buzz"
+         - if the number is divizible by both 3 and 5, print "fizz buzz"*/
+        for(num = 0; num <= 100; num++){
+            let str;
+            //as 0 is falsy - reverse the condition with ! (NOT)
+            if(!(num % 3)){
+                if(!(num % 5)){
+                    str = `${num} fizz buzz`;
+                } 
+                else{
+                    str = `${num} fizz`
+                }   
+            }
+            else if(!(num % 5)){
+                str = `${num} buzz`;
+            }
+            else{
+                str = `${num}`
+            }
+            console.log(str);
+        }
+    </script>
+</body>
+</html>
